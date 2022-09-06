@@ -2,22 +2,22 @@ class Bus:
     def __init__(self, route_number, destination):
         self.route_number = route_number
         self.destination = destination
-        self.passengercount = 0
+        self.passengers = []
 
     def drive(self):
         return "Brum brum"
     
     def passenger_count(self):
-        return self.passengercount
+        return len(self.passengers)
 
     def pick_up(self, person):
-        self.passengercount += 1
+        self.passengers.append(person)
 
     def drop_off(self, person):
-        self.passengercount -= 1
+        self.passengers.remove(person)
 
     def empty(self):
-        self.passengercount = 0
+        self.passengers.clear()
 
     def pick_up_from_stop(self, bus_stop):
-        self.passengercount = bus_stop.queuelength
+        self.passengers = bus_stop.queuelength        

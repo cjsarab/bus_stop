@@ -10,10 +10,8 @@ class TestBus(unittest.TestCase):
     def test_has_route_number(self):
         self.assertEqual(22, self.bus.route_number)
 
-
     def test_has_destination(self):
         self.assertEqual("Ocean Terminal", self.bus.destination)
-
 
     def test_can_drive(self):
         self.assertEqual("Brum brum", self.bus.drive())
