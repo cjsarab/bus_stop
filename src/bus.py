@@ -18,3 +18,6 @@ class Bus:
 
     def empty(self):
         self.passengercount = 0
+
+    def pick_up_from_stop(self, bus_stop):
+        self.passengercount = bus_stop.queuelength
