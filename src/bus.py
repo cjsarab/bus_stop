@@ -23,4 +23,4 @@ class Bus:
         # self.passengers = bus_stop.queue
         for passengers in bus_stop.queue:
             self.passengers.append(passengers)
-        bus_stop.queue.clear()
+        bus_stop.clear()
