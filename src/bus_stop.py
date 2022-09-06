@@ -1,15 +1,15 @@
 class BusStop:
     def __init__(self, name):
         self.name = name
-        self.queuelength = []
+        self.queue = []
     
     def queue_length(self):
-        return len(self.queuelength)
+        return len(self.queue)
 
     def add_to_queue(self, person):
-        self.queuelength.append(person)
+        self.queue.append(person)
 
     def clear(self):
-        self.queuelength.clear()
+        self.queue.clear()
 
     

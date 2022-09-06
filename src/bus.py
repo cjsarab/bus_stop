@@ -20,4 +20,4 @@ class Bus:
         self.passengers.clear()
 
     def pick_up_from_stop(self, bus_stop):
-        self.passengers = bus_stop.queuelength        
+        self.passengers = bus_stop.queue  
